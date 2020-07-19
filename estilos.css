@@ -1,4 +1,27 @@
 body {
     background-color: black;
     color: orange;
+    padding-top: 100px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    float: left;
+}
+
+#especial {
+    background-color: teal;
+}
+
+.outracor {
+    background-color: rgb(185, 53, 43);
 }
