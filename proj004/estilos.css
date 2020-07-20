@@ -3,16 +3,20 @@ body {
 }
 
 ul {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 li {
     list-style: none;
-    background-color: #27AE60;
-    padding: 60px;
+    
+    padding: 60px 40px 60px 100px;
     margin-bottom: 3px;
-    text-align: center;
+    background-image: url('rec.png');
+    background-repeat: no-repeat;
+    background-position: 40px center;
+    background-size: 40px 40px;
+    height: 28px;
 }
 
 li a {
@@ -25,14 +29,27 @@ li a {
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 2px;
-    height: 75px;
+    display: block;
+    background-image: url('arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px 30px;
+    -webkit-font-smoothing: antialised;
 }
 
-li:hover {
+li.feito:hover {
     background-color: rgba(39, 174, 96, 0.8);
 }
 
-li .rec {
-    height: 40px;
-    width: 40px;
+li.feito {
+    background-color: #27AE60;
+    background-image: url('done.png');
+}
+
+li.pend {
+    background-color: #4A4A4A;
+}
+
+li.pend:hover {
+    background-color: rgba(74, 74, 74, 0.8);
 }
