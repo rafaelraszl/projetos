@@ -1,0 +1,38 @@
+body {
+    background-color: #F2F2F2;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: #27AE60;
+    padding: 60px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 2px;
+    height: 75px;
+}
+
+li:hover {
+    background-color: rgba(39, 174, 96, 0.8);
+}
+
+li .rec {
+    height: 40px;
+    width: 40px;
+}
