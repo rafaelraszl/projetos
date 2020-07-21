@@ -20,6 +20,15 @@ body {
     box-shadow: 0 6px 0 0 #a32751;
     border-radius: 3px;
     text-align: center;
+    transition: linear 0.2s;
+}
+
+.botao:hover {
+    color: #fff;
+    background-color: #fc7da9;
+    box-shadow: 0 6px 0 0 #a32751;
+    transition: linear 0.2s;
+
 }
 
 /* HEADER */
