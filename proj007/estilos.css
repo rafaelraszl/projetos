@@ -9,6 +9,19 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.botao {
+    background-color: #ff397e;
+    font-size: 36px;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 6px 0 0 #a32751;
+    border-radius: 3px;
+}
+
+/* HEADER */
 
 header {
     margin-bottom: -90px;
@@ -52,10 +65,30 @@ header h1 {
     margin-top: 10px;
 }
 
+/* SECTION TOP0 */
+
 section#topo {
     background-image: url(images/fundo.png);
     background-size: cover;
     height: 700px;
+}
+
+section#topo .chamada {
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+}
+
+section#topo .chamada h2 {
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+section#topo .chamada p {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 
