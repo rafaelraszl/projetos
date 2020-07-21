@@ -19,6 +19,7 @@ body {
     text-decoration: none;
     box-shadow: 0 6px 0 0 #a32751;
     border-radius: 3px;
+    text-align: center;
 }
 
 /* HEADER */
@@ -91,6 +92,38 @@ section#topo .chamada p {
     margin: 0;
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+/* SECTION CONHEÇA */
+
+section#conheca {
+    padding: 70px;
+}
+
+section#conheca .container img {
+    /* width: 600px;
+    height: 400px; */
+    width: 450px;
+    height: 398px;
+}
+
+section#conheca .texto {
+    padding: 70px;
+    padding-top: 30px;
+    padding-right: 70px;
+}
+
+section#conheca .texto he {
+    font-size: 36px;
+}
+
+section#conheca .texto p {
+    font-size: 24px;
+}
+
+section#conheca .texto a {
+    width: 60%;
+    font-size: 30px;
 }
 
 
