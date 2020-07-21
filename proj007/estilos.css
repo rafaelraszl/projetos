@@ -203,6 +203,25 @@ section#convite button span {
     visibility: hidden;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: #2a0157;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 4px;
+    font-size: 18px;
+
+}
+
+footer .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MOBILE */
+
 @media (max-width: 600px) {
     header nav {
         display: none;
@@ -210,5 +229,34 @@ section#convite button span {
 
     header h1 {
         margin-left: 20px;
+    }
+
+    section#topo {
+        padding: 20px;
+        padding-left: 40px;
+    }
+
+    section#conheca .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#conheca .container .texto {
+        padding: 10px;
+    }
+
+    section#conheca .container .texto a {
+        width: 100%;
+    }
+
+    section#convite form {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #4A4A4A;
+        font-size: 15px;
     }
 }
