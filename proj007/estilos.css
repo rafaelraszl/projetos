@@ -24,7 +24,8 @@ body {
 /* HEADER */
 
 header {
-    margin-bottom: -90px;
+    margin-bottom: -120px;
+    
 }
 
 header nav ul {
@@ -68,7 +69,7 @@ header h1 {
 /* SECTION TOP0 */
 
 section#topo {
-    background-image: url(images/fundo.png);
+    background-image: url(images/fundo3.jpg);
     background-size: cover;
     height: 700px;
 }
