@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin-bottom: -90px;
+}
+
+header nav ul {
+    padding-right: 80px;
+    margin: 0;
+    margin-top: 20px;
+
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+header nav li:last-child {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header h1 span {
+    visibility: hidden;
+}
+
+header h1 {
+    margin: 0;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 76px;
+    margin-top: 10px;
+}
+
+section#topo {
+    background-image: url(images/fundo.png);
+    background-size: cover;
+    height: 700px;
+}
+
+
+@media (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        margin-left: 20px;
+    }
+}
