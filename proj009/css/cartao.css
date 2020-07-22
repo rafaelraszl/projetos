@@ -68,6 +68,7 @@
     padding-left: 20px;
     border: 1px solid #dfdfdf;
     border-radius: 2px;
+    outline-color: #8BD638;
 }
 
 .cartao .newCard input.data {
