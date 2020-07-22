@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(cartao.css);
 
 html {
     display: flex;
@@ -25,11 +26,6 @@ h1, h2, h3, ul {
 
 .checkout main {
     display: flex;
-}
-
-.checkout main .cartao {
-    height: 100px;
-    width: 55%;
 }
 
 .checkout main .resumos {
