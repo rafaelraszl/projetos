@@ -8,7 +8,14 @@ aside {
     background-color: #3A3C40;
     height: 100vw;
     text-align: center;
-    padding-top: 50px !important;
+    padding: 50px !important;
+}
+
+aside img {
+    border-radius: 3px;
+    -webkit-box-shadow: 2px -2px 4px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 2px -2px 4px 0px rgba(255,255,255,1);
+    box-shadow: 2px -2px 4px 0px rgba(255,255,255,1);
 }
 
 aside h1 {
@@ -33,4 +40,44 @@ aside .button {
     font-weight: 700;
     margin-top: 10px;
     box-shadow: 0 4px 0 0 rgba(245, 166, 35, 0.6);
+}
+
+aside .redes-sociais {
+    margin-top: 20px;
+}
+
+aside .redes-sociais li {
+    display: inline;
+    margin-right: 5px;
+}
+
+aside .redes-sociais li a {
+    color: #fff;
+    font-size: 30px;
+}
+
+aside .habilidades {
+    text-align: left;
+    margin-top: 30px;
+}
+
+aside .habilidades h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #eeeeee;
+    margin-bottom: 10px;
+}
+
+aside .habilidades small {
+    color: #8FA4AF;
+    font-size: 12px;
+}
+
+aside .habilidades progress {
+    margin-bottom: 5px;
+}
+
+aside .habilidades progress::-webkit-progress-value {
+    margin-bottom: 5px;
+    background-color: #f1b668 !important;
 }
