@@ -1,0 +1,87 @@
+.resumos {
+    margin-left: 20px;
+    width: 45%;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-left: 1px solid #deddde;
+}
+
+.resumos ul.produtos {
+    margin: 0;
+    padding: 0;
+}
+
+.resumos .produtos li {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.resumos .produtos li:last-child {
+    border: none;
+}
+
+.resumos .produtos .detalhes {
+    width: 80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumos .produtos li .detalhes h3 {
+    color: #777879;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.resumos .produtos li .detalhes small {
+    font-size: 10px;
+    font-weight: 200;
+    font-style: italic;
+    color: #4a4a4a;
+    margin-bottom: 4px;
+
+}
+.resumos .produtos li .detalhes span {
+    color: #9c9c9c;
+    font-size: 10px;
+    font-weight: 800;
+}
+.resumos .produtos li .preco {
+    color: #777879;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.resumos .produtos img {
+    border: 1px solid #e3e3e3;
+}
+
+.resumos table {
+    margin-top: 78px;
+    width: 100%;
+    border-top: 1px solid #d6d4d7;
+    border-spacing: 0;
+    color: #777879;
+    font-size: 12px;
+}
+
+.resumos table th {
+    text-align: left;
+}
+
+.resumos table td {
+    text-align: right;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* pode-se usar . resumos table tfoot * que siginifica que está formatando todos os itens de tfoot */
+.resumos table tfoot th, .resumos table tfoot td {
+    border-top: 1px solid #d6d4d7;
+    font-weight: 800;
+    padding-top: 7px;
+}
