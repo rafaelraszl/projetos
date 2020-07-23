@@ -1,4 +1,42 @@
 article {
     background-color: #fff;
-    height: 100vw;
+    border-right: 1px solid #e1e1e1;
+}
+
+/* article .columns .column {
+    display: block;
+} */
+
+article .content {
+    font-size: 15px;
+    color: #666666;
+    padding: 30px;
+}
+
+article .content h3 {
+    color: #D0021B !important;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 20px;
+    border-bottom: 1px solid #D0021B;
+    padding-bottom: 5px;
+}
+/* article .content h3 i {
+    margin-left: 20px !important;    
+} */
+
+article .instituicao h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+article .instituicao h5 {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+article .instituicao small {
+    font-weight: 300;
+    font-size: 15px;
 }

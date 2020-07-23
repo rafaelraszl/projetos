@@ -1,12 +1,10 @@
 body {
     background-color: #cccccc;
-    height: 100vw;
     font-family: 'Lato', sans-serif;
 }
 
 aside {
     background-color: #3A3C40;
-    height: 100vw;
     text-align: center;
     padding: 50px !important;
 }
