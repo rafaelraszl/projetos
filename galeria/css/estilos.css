@@ -1,0 +1,42 @@
+body {
+    padding-top: 70px;
+}
+
+.col-lg-4{
+   padding-bottom: 30px;
+}
+
+.imagem {
+    width: 1110px;
+    height: 700px;
+    position: absolute;
+    top: 70px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.imagem img {
+    padding-top: 85px;
+}
+
+.imagem img: :target .imagem {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imagem span.close {
+    top: 200px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+}
+
+.imagem span.close:target .imagem {
+    visibility: hidden;
+    opacity: 0;
+}

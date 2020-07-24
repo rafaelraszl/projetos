@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mekhet Dev</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <a href="https://github.com/rafaelraszl/projetos" class="navbar-brand">Projetos</a>
@@ -24,37 +26,48 @@
     <div class="container">
 
         <div class="jumbotron">
-            <h1>Certificados</h1>
+            <h1><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z"/>
+                <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z"/>
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+              </svg> Certificados</h1>
         </div>
 
         <div class="row">
 
-            <div class="col-lg-4">
-                <div>
-                    <img class="img-thumbnail" src="images/certificado-01.jpg">
-                </div>
+            <div class="col-lg-4 col-xs-6">
+                <a href="#img1">
+                    <img class="img-thumbnail" id="img1" src="images/certificado-01.jpg">
+                </a>
             </div>
 
-            <div class="col-lg-4">
-                <div>
-                    <img class="img-thumbnail" src="images/certificado-02.jpg">
-                </div>
+            <div class="col-lg-4 col-xs-6">
+                <a href="#img2">
+                    <img class="img-thumbnail" id="img2" src="images/certificado-02.jpg">
+                </a> 
             </div>
 
-            <div class="col-lg-4">
-                <div>
-                    <img class="img-thumbnail" src="images/no-image.jpg">
-                </div>
+            <div class="col-lg-4 col-xs-6">
+                <a href="#img3">
+                    <img class="img-thumbnail" id="img3" src="images/no-image.jpg">
+                </a>
             </div>
 
-            <div class="col-lg-4">
-                <div>
-                    <img class="img-thumbnail" src="images/no-image.jpg">
-                </div>
+            <div class="col-lg-4 col-xs-6">
+                <a href="#img4">
+                    <img class="img-thumbnail" id="img4" src="images/no-image.jpg">
+                </a>
             </div>
-                
-            </div>
+
         </div>
+
+        <!-- <div class="container"> -->
+            <div class="imagem">
+                <span class="close">X</span>
+                <img id="img1" src="images/certificado-01.jpg">
+            </div>
+
+        <!-- </div> -->
 
     </div>
 
