@@ -40,3 +40,14 @@ article .instituicao small {
     font-weight: 300;
     font-size: 15px;
 }
+
+article .container a {
+    background-color: #f9a640 !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    color: #fff !important;
+    padding: 20px 30px 20px 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    box-shadow: 0 4px 0 0 rgba(245, 166, 35, 0.6);
+}
