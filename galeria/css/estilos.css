@@ -6,7 +6,7 @@ body {
    padding-bottom: 30px;
 }
 
-.imagem {
+/* .container .imagem {
     width: 1110px;
     height: 700px;
     position: absolute;
@@ -18,13 +18,13 @@ body {
     border-radius: 4px;
     padding-right: 32px;
     padding-left: 32px;
+} */
+
+.container .imagem img {
+    padding-left: 125px;
 }
 
-.imagem img {
-    padding-top: 85px;
-}
-
-.imagem img: :target .imagem {
+/*.imagem img: :target .imagem {
     visibility: visible;
     opacity: 1;
 }
@@ -39,4 +39,4 @@ body {
 .imagem span.close:target .imagem {
     visibility: hidden;
     opacity: 0;
-}
+} */
