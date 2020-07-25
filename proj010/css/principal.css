@@ -21,9 +21,9 @@ article .content h3 {
     border-bottom: 1px solid #D0021B;
     padding-bottom: 5px;
 }
-/* article .content h3 i {
-    margin-left: 20px !important;    
-} */
+article .content h3 span.icon {
+    margin-right: 0px !important;   
+}
 
 article .instituicao h4 {
     font-size: 17px;
