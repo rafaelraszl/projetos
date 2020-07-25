@@ -48,7 +48,8 @@ https://www.w3schools.com/jsref/met_win_alert.asp
     Coletar o nome do usuário e mostrar concatenado com a frase, exibindo 
     Bom dia Bia, caso o nome informado seja Bia.
 *******************************************************************************/
-alert("Bom dia Bia!");
+var nome = prompt("Digite seu nome:", "seu nome aqui");
+alert("Bom dia " + nome + "!");
 
 /* 
 Variáveis podem receber o retorno expressões de lógicas que retornam verdadeiro
@@ -70,11 +71,20 @@ https://www.w3schools.com/jsref/jsref_operators.asp
 	usuário seja maior de idade.
 *******************************************************************************/
 
-var maiorIdade = 18;
+var maiorIdade = prompt("Digite a sua idade");
 
 if (maiorIdade >= 18) {
-  maiorIdade = true;
+    alert(maiorIdade = true);
+} else {
+    alert(maioridade = false);
 }
+
+
+// var maiorIdade = 18;
+
+// if (maiorIdade >= 18) {
+//   maiorIdade = true;
+// }
 
 // var maiorIdade = prompt("Digite a sua idade");
 
