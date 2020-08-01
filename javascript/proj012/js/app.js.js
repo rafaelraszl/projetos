@@ -5,6 +5,8 @@ const display = $('.display input');
 const currencyButton = $('.currency');
 const buttons = Array.from(document.querySelectorAll('button'));
 const numberButtons = buttons.filter(onlyNumbers);
+let displayDigits = '';
+let displayValue = 0;
 
 
 // Events
@@ -53,5 +55,25 @@ function onlyNumbers(btn) {
 }
 
 function onClickNumberButton(event) {
-    display.value += event.target.innerHTML;
+    displayDigits += event.target.innerHTML;
+    displayValue = digitsToNumber(displayDigits);
+    display.value = format(displayValue, 'BRL');
+}
+
+function digitsToNumber(digits) {
+    const sizeFirstDigits = digits.length - 2;
+    const firstDigits = digits.substr(0, sizeFirstDigits);
+    const lastDigits = digits.substr(-2);
+    return parseFloat(firstDigits + '.' + lastDigits);
+}
+
+function format(value, symbol) {
+    const config = {style: 'currency', currency: symbol};
+    if (symbol =='BRL') {
+        return value.toLocaleString('pt-BR', config);
+    }
+    else if (symbol == 'USD') {
+        return value.toLocaleString('en', config);
+
+    }
 }
