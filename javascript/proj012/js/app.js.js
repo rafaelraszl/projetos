@@ -77,3 +77,17 @@ function format(value, symbol) {
 
     }
 }
+
+function convert(value, conversion, callback) {
+    // const base = conversion[0];
+    const symbol = conversion[1];
+    const api = `http://data.fixer.io/api/latest?access_key=2b548e3d8bc6efe98032c0a7d5dc490c&format=1&base=EUR&symbols=${symbol}`;
+    const request = new XMLHttpRequest();
+    request.open('GET', api);
+    request.onload = function() {
+        const result = JSON.parse(request.responseText).rates;
+        const rate = Object.values(result)[0];
+        callback(value * rate);
+    }
+    request.send();
+}
