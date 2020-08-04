@@ -65,4 +65,21 @@ li {
     background-color: #2b99d6;
     width: 100px;
     border: none;
+    outline: none;
+}
+
+.inputItem .minimumStock {
+    background-color: #34495E;
+    height: 72px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+.inputItem .minimumStock button {
+    background: none;
+    border: none;
+    outline: none;
 }
