@@ -10,10 +10,11 @@
 </head>
 <body class="emptyList">
 
-    <div class="cadastre">
+    <!-- <div class="cadastre">
         <small>Cadastre seus</small>
         <small>produtos</small>
-    </div>
+    </div> -->
+
 
     <div class="topBar">
 
@@ -26,7 +27,7 @@
                 </button>
             </div>
 
-            <div class="minimumStock">
+            <div class="minimumStock hidden">
                 <label>Estoque mínimo</label>
 
                 <span class="amount">1</span>
@@ -42,7 +43,7 @@
 
         </div>
 
-        <div class="updateList">
+        <div class="updateList hidden">
             <button class="cancel">
                 <img src="images/voltar.png">
             </button>
@@ -55,7 +56,76 @@
 
     </div>
 
-    <ul id="GroceryList"></ul>
+    <ul class="" id="GroceryList">
+        <li>
+            <div class="item">
+                <div class="description">
+                    <label>Tomates <sup>Min 3</sup></label>
+                    <span>6</span>
+                </div>
+
+                <div class="actions">
+                    <button class="delete">
+                        <img src="images/excluir.png">
+                    </button>
+
+                    <button class="minus">
+                        <img src="images/menos.png">
+                    </button>
+
+                    <button class="plus">
+                        <img src="images/mais.png">
+                    </button>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="item">
+                <div class="description hasToBuy">
+                    <label>Ovos <sup>Min 12</sup></label>
+                    <span>6</span>
+                </div>
+
+                <div class="actions">
+                    <button class="delete">
+                        <img src="images/excluir.png">
+                    </button>
+
+                    <button class="minus">
+                        <img src="images/menos.png">
+                    </button>
+
+                    <button class="plus">
+                        <img src="images/mais.png">
+                    </button>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="item">
+                <div class="description">
+                    <label>Carne <sup>Min 3</sup></label>
+                    <span>6</span>
+                </div>
+
+                <div class="actions">
+                    <button class="delete">
+                        <img src="images/excluir.png">
+                    </button>
+
+                    <button class="minus">
+                        <img src="images/menos.png">
+                    </button>
+
+                    <button class="plus">
+                        <img src="images/mais.png">
+                    </button>
+                </div>
+            </div>
+        </li>
+    </ul>
     
     
 
