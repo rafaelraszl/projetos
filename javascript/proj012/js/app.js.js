@@ -28,6 +28,9 @@ function $(element) {
 
 function onClickClearButton() {
     display.value = '';
+    displayDigits = '';
+    changeState(currencyButton, 'select');
+    display.classList.remove('displayConverted');
 }
 
 function onclickCurrencyButton(event) {
@@ -36,17 +39,21 @@ function onclickCurrencyButton(event) {
         toggleCurrency(btn);
     }
     else if (btn.classList.contains('convert')) 
-        console.log('Clique para converter.');
+        convert(displayValue, selectedCurrency(), function (convertedValue) {
+            display.value = format(convertedValue, selectedCurrency[1]);
+            display.classList.add('displayConverted');
+            changeState(currencyButton, 'converted');
+        });
 }
 
 function toggleCurrency(btn) {
-    if (btn.classList.contains('brl-usd')) {
-        btn.classList.remove('brl-usd');
-        btn.classList.add('usd-brl');
+    if (btn.classList.contains('brl-eur')) {
+        btn.classList.remove('brl-eur');
+        btn.classList.add('eur-brl');
     }
-    else if (btn.classList.contains('usd-brl')) {
-        btn.classList.remove('usd-brl');
-        btn.classList.add('brl-usd');
+    else if (btn.classList.contains('eur-brl')) {
+        btn.classList.remove('eur-brl');
+        btn.classList.add('brl-eur');
     }
 }
 
@@ -57,7 +64,8 @@ function onlyNumbers(btn) {
 function onClickNumberButton(event) {
     displayDigits += event.target.innerHTML;
     displayValue = digitsToNumber(displayDigits);
-    display.value = format(displayValue, 'BRL');
+    display.value = format(displayValue, selectedCurrency()[0]);
+    changeState(currencyButton, 'convert');
 }
 
 function digitsToNumber(digits) {
@@ -72,7 +80,7 @@ function format(value, symbol) {
     if (symbol =='BRL') {
         return value.toLocaleString('pt-BR', config);
     }
-    else if (symbol == 'USD') {
+    else if (symbol == 'EUR') {
         return value.toLocaleString('en', config);
 
     }
@@ -81,7 +89,7 @@ function format(value, symbol) {
 function convert(value, conversion, callback) {
     // const base = conversion[0];
     const symbol = conversion[1];
-    const api = `http://data.fixer.io/api/latest?access_key=2b548e3d8bc6efe98032c0a7d5dc490c&format=1&base=EUR&symbols=${symbol}`;
+    const api = `http://data.fixer.io/api/latest?access_key=2b548e3d8bc6efe98032c0a7d5dc490c&format=1&symbols=${symbol}`;
     const request = new XMLHttpRequest();
     request.open('GET', api);
     request.onload = function() {
@@ -90,4 +98,13 @@ function convert(value, conversion, callback) {
         callback(value * rate);
     }
     request.send();
+}
+
+function changeState(btn, state) {
+    btn.classList.remove('select', 'convert', 'converted');
+    btn.classList.add(state);
+}
+
+function selectedCurrency() {
+    return Array.from(currencyButton.classList).filter(c => c.includes('eur'))[0].toUpperCase().split('-');
 }

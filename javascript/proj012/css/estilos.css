@@ -57,11 +57,11 @@
     background-position: center center;
   }
   
-  button.currency.usd-brl {
+  button.currency.eur-brl {
     background-image: url("../images/dolar-real.png");
   }
   
-  button.currency.brl-usd {
+  button.currency.brl-eur {
     background-image: url("../images/real-dolar.png");
   }
   
