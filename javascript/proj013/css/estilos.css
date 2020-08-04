@@ -7,9 +7,9 @@
 
 body.emptyList {
     background-color: #ecf0f1;
-    background-image: url('../images/carrinho.png');
+    background-image: url('../images/empty-list.png');
     background-repeat: no-repeat;
-    background-position: center 350px;
+    background-position: center 300px;
 }
 
 .cadastre {
