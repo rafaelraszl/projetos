@@ -2,7 +2,6 @@ class GroceryInputItem {
 
     constructor() {
         // this.element = $('.inputItem');
-        console.log('O construtor foi chamado!');
     }
 
     // hideMinimumStock() {
@@ -14,7 +13,13 @@ class GroceryInputItem {
     // }
 
     hideMinimumStock() {
-        $('.minimumStock').classList.add('hidden');
+        // $('.minimumStock').classList.add('hidden');
+        document.querySelector('.minimumStock').classList.add('hidden');
+    }
+
+    showMinimumStock() {
+        // $('.minimumStock').classList.remove('hidden');
+        document.querySelector('.minimumStock').classList.remove('hidden');
     }
 }
 
