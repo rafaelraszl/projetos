@@ -22,6 +22,8 @@ class GroceryUpdateList {
     }
 
     onClickSave() {
+        groceryList.saveToLocalStorage();
+        groceryList.render();
        this.hide();
     }
 

@@ -31,24 +31,30 @@ class GroceryItem {
     onClickDescription(event) {
         const actions = event.currentTarget.nextElementSibling;
         actions.classList.toggle('hidden');
-        // groceryList.inputItem.hideMinimumStock();
+        groceryList.inputItem.hideMinimumStock();
     }
 
     onClickDelete() {
+        const id = this.element.getAttribute('id').replace('_', '');
+        groceryList.remove(parseInt(id));
         this.element.remove();
     }
 
     onClickMinus() {
         const amount = $('.amountStock', this.element);
-        if (parseInt(amount.innerHTML) > 0) {
+        const amountvalue = parseInt(amount.innerHTML);
+        if (parseInt(amountvalue) > 0) {
             // amount.innerHTML = parseInt(amount.innerHTML) - 1 + $('.supAmount').innerHTML;
-            amount.innerHTML = parseInt(amount.innerHTML) - 1;
+            amount.innerHTML = this.amountStock = amountvalue - 1;
         }
+        groceryList.updateList.show();
     }
 
     onClickPlus() {
         const amount = $('.amountStock', this.element);
+        const amountValue = parseInt(amount.innerHTML) + 1;
         // amount.innerHTML = parseInt(amount.innerHTML) + 1 + $('.supAmount').innerHTML;
-        amount.innerHTML = parseInt(amount.innerHTML) + 1;
+        amount.innerHTML =  this.amountStock = amountValue;
+        groceryList.updateList.show();
     }
 }

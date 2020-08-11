@@ -18,6 +18,8 @@ class GroceryInputItem {
         }
         else {
             groceryList.add(this.getData());
+            $('input', this.element).value = '';
+            this.hideMinimumStock();
         }
     }
 
@@ -36,6 +38,7 @@ class GroceryInputItem {
 
     hideMinimumStock() {
         $('.minimumStock', this.element).classList.add('hidden');
+        $('.amount', this.element).innerHTML = 1;
         // document.querySelector('.minimumStock').classList.add('hidden');
     }
 

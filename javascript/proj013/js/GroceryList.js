@@ -4,15 +4,19 @@ class GroceryList {
       this.inputItem = new GroceryInputItem();
       this.updateList = new GroceryUpdateList();
       this.render();
-      this.items = this.loadData();
     }
 
+    // attachEvents() {
+    //     $('.emptyList', this.element).addEventListener('click', this.onClickEmptyList.bind(this));
+    // }
+
     loadData() {
-        return [
-            {name: 'Tomates', minimumStock: 6, amountStock: 3},
-            {name: 'Cervejas', minimumStock: 2, amountStock: 7},
-            {name: 'Chocolates', minimumStock: 3, amountStock: 15}
-        ];
+        let listItems = [];
+        const localData = localStorage.getItem('groceryList');
+        if (localData) {
+            listItems = JSON.parse(localData);
+        }
+        return listItems.map(item => new GroceryItem(item));
     }
 
     saveToLocalStorage(){
@@ -21,13 +25,33 @@ class GroceryList {
 
     add(item) {
         this.items.push(item);
+        this.saveToLocalStorage();
+        this.render();
     }
 
     remove(index) {
         this.items.splice(index, 1);
+        this.saveToLocalStorage();
+        this.render();
     }
 
-    render() {
-        
+    // onClickEmptyList(event) {
+    //     groceryList.inputItem.hideMinimumStock();
+    // }
+
+    render(element) {
+        // this.element = element;
+        this.items = this.loadData();
+        $('#GroceryList').innerHTML = "";
+
+       this.items.forEach(function(item, index) {
+           $('#GroceryList').innerHTML += `<li id='_${index}'></li>`;
+       });
+       
+       this.items.forEach(function(item, index) {
+        item.render( $(`#_${index}`) );
+      });
+
+    //   this.attachEvents();
     }
 }
