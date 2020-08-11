@@ -36,8 +36,15 @@ class GroceryItem {
 
     onClickDelete() {
         const id = this.element.getAttribute('id').replace('_', '');
-        groceryList.remove(parseInt(id));
-        this.element.remove();
+        
+        if (confirm('Deseja realmente excluir o item?')) {
+            groceryList.remove(parseInt(id));
+            this.element.remove();
+        }
+        else {
+            groceryList.render();
+        }
+        
     }
 
     onClickMinus() {

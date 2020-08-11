@@ -24,10 +24,11 @@ class GroceryUpdateList {
     onClickSave() {
         groceryList.saveToLocalStorage();
         groceryList.render();
-       this.hide();
+        this.hide();
     }
 
     onClickCancel() {
+        groceryList.render();
         this.hide();
     }
 
