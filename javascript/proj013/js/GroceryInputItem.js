@@ -26,25 +26,16 @@ class GroceryInputItem {
 
     onFocusInput() {
        this.showMinimumStock();
+       $('.description').classList.add('margin');
     }
-
-    // hideMinimumStock() {
-    //    $('.minimumStock', this.element).classList.add('hidden');
-    // }
-
-    // showMinimumStock() {
-    //     $('.minimumStock', this.element).classList.remove('hidden');
-    // }
 
     hideMinimumStock() {
         $('.minimumStock', this.element).classList.add('hidden');
         $('.amount', this.element).innerHTML = 1;
-        // document.querySelector('.minimumStock').classList.add('hidden');
     }
 
     showMinimumStock() {
         $('.minimumStock', this.element).classList.remove('hidden');
-        // document.querySelector('.minimumStock').classList.remove('hidden');
     }
 
     getData() {

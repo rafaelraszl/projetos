@@ -32,6 +32,7 @@ class GroceryItem {
         const actions = event.currentTarget.nextElementSibling;
         actions.classList.toggle('hidden');
         groceryList.inputItem.hideMinimumStock();
+       $('.description').classList.remove('margin');
     }
 
     onClickDelete() {

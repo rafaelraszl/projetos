@@ -6,10 +6,6 @@ class GroceryList {
       this.render();
     }
 
-    // attachEvents() {
-    //     $('.emptyList', this.element).addEventListener('click', this.onClickEmptyList.bind(this));
-    // }
-
     loadData() {
         let listItems = [];
         const localData = localStorage.getItem('groceryList');
@@ -35,12 +31,7 @@ class GroceryList {
         this.render();
     }
 
-    // onClickEmptyList(event) {
-    //     groceryList.inputItem.hideMinimumStock();
-    // }
-
     render(element) {
-        // this.element = element;
         this.items = this.loadData();
         $('#GroceryList').innerHTML = "";
 
@@ -51,7 +42,5 @@ class GroceryList {
        this.items.forEach(function(item, index) {
         item.render( $(`#_${index}`) );
       });
-
-    //   this.attachEvents();
     }
 }
