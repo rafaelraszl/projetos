@@ -33,12 +33,13 @@ class GroceryItem {
         actions.classList.toggle('hidden');
         groceryList.inputItem.hideMinimumStock();
        $('.description').classList.remove('margin');
+       $('.cancelInput').classList.add('hidden');
     }
 
     onClickDelete() {
         const id = this.element.getAttribute('id').replace('_', '');
         
-        if (confirm('Deseja realmente excluir o item?')) {
+        if (confirm('Deseja realmente excluir o item ' + this.name + '?')) {
             groceryList.remove(parseInt(id));
             this.element.remove();
         }

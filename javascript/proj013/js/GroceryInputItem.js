@@ -64,5 +64,6 @@ class GroceryInputItem {
         this.hideMinimumStock();
         $('.description').classList.remove('margin');
         $('.cancelInput').classList.add('hidden');
+        $('input').value = '';
     }
 }
