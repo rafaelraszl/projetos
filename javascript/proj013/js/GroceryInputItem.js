@@ -10,6 +10,7 @@ class GroceryInputItem {
         $('.minus', this.element).addEventListener('click', this.onClickMinus.bind(this));
         $('.plus', this.element).addEventListener('click', this.onClickPlus.bind(this));
         $('.save', this.element).addEventListener('click', this.onClickSave.bind(this));
+        $('.cancelInput', this.element).addEventListener('click', this.onClickCancelInput.bind(this));
     }
 
     onClickSave() {
@@ -27,6 +28,7 @@ class GroceryInputItem {
     onFocusInput() {
        this.showMinimumStock();
        $('.description').classList.add('margin');
+       $('.cancelInput').classList.remove('hidden');
     }
 
     hideMinimumStock() {
@@ -56,5 +58,11 @@ class GroceryInputItem {
         $('.amount', this.element).innerHTML = this.getData().minimumStock + 1;
 
     
+    }
+
+    onClickCancelInput() {
+        this.hideMinimumStock();
+        $('.description').classList.remove('margin');
+        $('.cancelInput').classList.add('hidden');
     }
 }
